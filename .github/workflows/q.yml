@@ -13,11 +13,12 @@ jobs:
              sudo apt update && sudo apt install -y firefox unzip tree
              dir
              pwd
+             tar -xvzf geckodriver-v0.36.0-linux64.tar.gz
+             ls
+             chmod 777 geckodriver
              ls -tgh
              unzip ip6t33by.ShitassNigga.zip -d xd
              dir
-             geckodriver --version
-             firefox --version
              python3 k.py
       - name: Upload file
         uses: actions/upload-artifact@v4

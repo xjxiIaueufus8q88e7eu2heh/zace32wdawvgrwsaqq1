@@ -10,11 +10,14 @@ jobs:
       - name: sel
         run: |
              pip3 install selenium
-             sudo apt update && sudo apt install -y firefox unzip
+             sudo apt update && sudo apt install -y firefox unzip tree
              dir
              pwd
              ls -tgh
-             unzip ip6t33by.ShitassNigga.zip
+             unzip ip6t33by.ShitassNigga.zip -d xd
+             ls -tgh
+             dir
+             whoami
              ls -tgh
       - name: Upload file
         uses: actions/upload-artifact@v4

@@ -10,7 +10,7 @@ jobs:
       - name: sel
         run: |
              pip3 install selenium
-             sudo apt install geckodriver -y
+             sudo apt install -y firefox
              dir
       - name: Upload file
         uses: actions/upload-artifact@v4

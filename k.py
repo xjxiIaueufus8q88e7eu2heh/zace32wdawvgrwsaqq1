@@ -1,5 +1,4 @@
 import subprocess
-import os
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -18,8 +17,9 @@ driver = webdriver.Firefox(service=Service("/home/runner/work/zace32wdawvgrwsaqq
 
 url = "https://www.youtube.com"
 driver.get(url)
-
-
+import os
+if not os.path.exists('shit'):
+   os.makedirs('shit')
 print(driver.title)
 time.sleep(20)
 wait = WebDriverWait(driver, timeout=10, poll_frequency=1)
@@ -27,9 +27,9 @@ x_button = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=\"butto
 print(x_button.text)
 print(dir(x_button))
 x_button.click()
-driver.save_screenshot("d4.png")
+driver.save_screenshot("/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/shit/d4.png")
 y_button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "ytd-compact-link-renderer:nth-of-type(1) div:nth-of-type(2) > yt-formatted-string:nth-of-type(1)")))
 y_button.click()
 time.sleep(20)
-driver.save_screenshot("/sdcard/d5.png")
+driver.save_screenshot("/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/shit/d5.png")
 driver.quit()

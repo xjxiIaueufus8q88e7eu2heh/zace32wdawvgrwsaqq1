@@ -1,7 +1,6 @@
 name: sel
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
 jobs:
   dlive:
     runs-on: ubuntu-22.04

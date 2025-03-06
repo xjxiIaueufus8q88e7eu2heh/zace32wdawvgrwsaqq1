@@ -21,4 +21,11 @@ driver.get(url)
 
 
 print(driver.title)
+time.sleep(20)
+wait = WebDriverWait(driver, timeout=10, poll_frequency=1)
+x_button = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=\"buttons\"]/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]")))
+print(x_button.text)
+print(dir(x_button))
+x_button.click()
+driver.save_screenshot("d4.png")
 driver.quit()

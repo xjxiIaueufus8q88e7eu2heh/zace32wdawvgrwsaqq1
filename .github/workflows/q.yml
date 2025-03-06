@@ -18,5 +18,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: d4.png
-          path: /home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/d4.png
+          path: /home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/shit
           compression-level: 9

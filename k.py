@@ -14,8 +14,7 @@ options.add_argument("--log-level=3")
 options.add_argument("-profile")
 options.add_argument('/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/xd/ip6t33by.ShitassNigga')
 
-
-driver = webdriver.Firefox(options=options)
+driver = webdriver.Firefox(service=Service("/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/geckodriver"), options=options)
 
 url = "https://www.youtube.com"
 driver.get(url)

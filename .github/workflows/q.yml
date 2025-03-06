@@ -23,6 +23,6 @@ jobs:
       - name: Upload file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.Name }}
-          path: ${{ env.File }}
+          name: d4.png
+          path: /home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1
           compression-level: 9

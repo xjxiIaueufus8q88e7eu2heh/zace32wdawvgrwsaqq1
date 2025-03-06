@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: sel
         run: |
-             pip3 install selenium selenium-webdriver
+             pip3 install selenium
              sudo apt update && sudo apt install -y firefox unzip tree
              dir
              pwd

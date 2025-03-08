@@ -10,14 +10,10 @@ jobs:
         run: |
              pip3 install selenium
              sudo apt install -y unzip wget
-             curl "https://drive.usercontent.google.com/download?id=1-4MyGG12RnwO1OHJrM6OBAx4qKYV-YbA&export=download&confirm=t&uuid=d0b439d2-2183-4a5d-a354-448a3091240a&at=AEz70l73Rv4Uf5h46km5ECrLz5d6:1741412482267" -o firefox.zip
-             unzip firefox.zip
-             mv firefox /opt
-             ln -s /opt/firefox/firefox /usr/local/bin/firefox
+             sudo snap install firefox
              tar -xvzf geckodriver-v0.36.0-linux64.tar.gz
              chmod 777 geckodriver
              unzip ip6t33by.ShitassNigga.zip -d xd
-             chmod 777 /usr/local/bin/firefox
              python3 k.py
       - name: Upload file
         uses: actions/upload-artifact@v4

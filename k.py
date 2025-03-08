@@ -11,7 +11,7 @@ options = Options()
 options.add_argument('-headless')
 options.add_argument("--log-level=3")
 options.add_argument("-profile")
-options.add_argument('/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/xd/ip6t33by.ShitassNigga')
+options.add_argument('/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/ip6t33by.ShitassNigga')
 
 driver = webdriver.Firefox(service=Service("/home/runner/work/zace32wdawvgrwsaqq1/zace32wdawvgrwsaqq1/geckodriver"), options=options)
 
